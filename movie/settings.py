@@ -11,6 +11,7 @@ load_dotenv(BASE_DIR / ".env")
 
 SECRET_KEY = os.getenv(
     "SECRET_KEY",
+    "django-insecure-dev-change-in-production"
 )
 
 DEBUG = os.getenv("DEBUG", "True").lower() in ("true", "1", "yes")
